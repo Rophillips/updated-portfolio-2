@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Portfolio</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/business-frontpage.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--combined navbar created dropdowns-->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-theme fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown"><img src="http://pngimg.com/uploads/github/github_PNG40.png" alt="Github image" width="50" height="50"></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"  href="https://github.com/Rophillips">
+                Github
+                 
+              </a>
+              <!--<a class="dropdown-item" href="#"></a>-->
+            </div>
+          </li>
+          <li class="nav-item">
+           <!-- <a class="nav-link" href="https://www.linkedin.com/in/roseanne-phillips">Resume</a>-->
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown"><img src="data:image/png;base64,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" alt="LinkedIn Image" width="50" height="50"></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://www.linkedin.com/in/roseanne-phillips">
+                LinkedIn</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown">Contact</a>-->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Roseanne Phillips</a>
+              <a class="dropdown-item" href="#">(908) 531-3959</a>
+              <a class="dropdown-item" href="#">Email - rphillips.rp@gmail.com</a>
+            </div>
+
+  </nav>
+
+  <!-- Header -->
+  <!--changed to col-sm-4-->
+  <section>
+    <header class="py-5 mb-5" header>
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-sm-4">
+
+            <h1 class="display-4 text-white mt-5 mb-2">Roseanne Phillips</h1>
+            <p class="lead mb-5 text-white-50">Accomplished sales professional aspiring to a completely different career in
+              Software Development.
+              With over 30 years of professional experience and many years of life experiences,
+              I'm ready for the challenge.
+            </p>
+
+  </section>
+
+  <!-- Page Content -->
+  <main class="container">
+
+    <aside class="row">
+      <!--changed to col-sm-4-->
+      <div class="col-sm-4 mb-5">
+        <h2>About</h2>
+        <hr>
+        <p> 
+          
+          After my sales career in the world of technology and careful consideration of the future, in 2020 I decided to become serious about software engineering, and am currently enrolled in a 24 week immersive course at Rutgers University to jumpstart this pivot in my career.
+          My specialties include dedication and the perseverance to quickly learn new skills and programming languages, problem solving, website optimization, and responsive design principles.
+          So far, I have Javascript, HTML, CSS, Node.JS, jQuery, Bootstrap, and Git/GitHub experience. I am enthusiastically looking forward to learning more about these and other languages that are in the near future.
+        </p>
+        <a class="btn btn-primary btn-lg" href="Roseanne Phillips AM.pdf" target="_blank" download>Resume&raquo;</a>
+        
+      </div>
+      <div class="col-sm-4 mb-5">
+        <h2>Contact</h2>
+        <hr>
+        <address>
+          <strong>Roseanne Phillips</strong>
+          <br>217 Chambers Street
+          <br>South Plainfield, NJ 07080
+          <br>
+        </address>
+        <address>
+          <abbr title="Phone"></abbr>
+          (908) 531-3959
+          <br>
+          <abbr title="Email"></abbr>
+          <a href="mailto:#">rphillips.rp@gmail.com</a>
+        </address>
+  </main>
+  <!-- /.row -->
+
+  <aside class="row">
+    <section class="col-sm-4 mb-5">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://github.com/kierajcullen/goodeats/raw/main/img/goodeats.gif"
+          alt="GitHub Images">
+        <div class="card-body">
+          <h3 class="card-title">Project One - "Good Eats"</h3>
+          <p class="card-text">Our project incorporates two APIs and allows users to optimize their recipe search by ingredient or title. Our team worked together to create a responsive website that is incredibly user friendly.
+            </p>
+        </div>
+        <div class="card-footer">
+          <a href="https://kierajcullen.github.io/goodeats/" class="btn btn-primary">Deployed Site</a>
+          <a href="https://github.com/kierajcullen/goodeats" class="btn btn-secondary">GitHub Repo</a>
+        </div>
+    </section>
+
+    <section class="col-sm-4 mb-5">
+      <div class="card h-100">
+        <img class="card-img-top"
+          src="https://user-images.githubusercontent.com/74886597/107815768-d47a0380-6d41-11eb-8d10-be3110080b07.png"
+          alt="Workday Scheduler">
+        <div class="card-body">
+          <h4 class="card-title">Assignment - "Workday Scheduler"</h4>
+          <p class="card-text">This daily planner features HTML, CSS and Javscript with an emphasis on jQuery. Clients can input their daily schedule and save the information. The planner will display red, green, or neutral to represent the time of day and assist clients with the organiation of their tasks.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://rophillips.github.io/Work-Day-Scheduler/" class="btn btn-primary">Deployed Site</a>
+          <a href="https://github.com/Rophillips/Work-Day-Scheduler" class="btn btn-secondary">GitHub Repo</a>
+        </div>
+    </section>
+
+    <section class="col-sm-4 mb-5">
+      <div class="card h-100">
+        <img class="card-img-top"
+          src="https://user-images.githubusercontent.com/74886597/104625097-59e69700-5662-11eb-91fd-c9bd7e8506ca.png"
+          alt="Password Generator">
+        <div class="card-body">
+          <h5 class="card-title">Assignment - "Password Generator"</h5>
+          <p class="card-text">The purpose of this assignment was to create a secure random password generator. This secure password generator functions by prompting the user for certain criteria.</p>
+        </div>
+        <div class="card-footer">
+          <a href="https://rophillips.github.io/password-generator/" class="btn btn-primary">Deployed Site</a>
+          <a href="https://github.com/Rophillips/password-generator" class="btn btn-secondary">GitHub Repo</a>
+       
+          
+        </div>
+    </section>
+  </aside>
+  <!-- /.row -->
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
