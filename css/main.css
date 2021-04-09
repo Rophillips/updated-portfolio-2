@@ -1,18 +1,21 @@
 .bg-theme{
-    background-color: #6f42c1;
+    background-color:  #6cb3d6;
 }
 
 header {
 
-    background-color: indigo !important; 
+    background-color: #87bdd8;
 }
 .btn-primary {
-    background-color: mediumpurple !important;
-    border-color: mediumpurple !important;
+    background-color: #6cb3d6 !important;
+    border-color: #6cb3d6 !important;
 }
 .btn-secondary {
-    background-color: mediumpurple !important;
-    border-color: mediumpurple !important;
+    background-color: #6cb3d6!important;
+    border-color: #6cb3d6!important;
     float: right;
 }
 
+body {
+    background-color: #87bdd8 !important;
+}
