@@ -1,5 +1,5 @@
 {
     "liveServer.settings.port": 5502,
     "editor.fontWeight": "normal",
-    "editor.cursorStyle": "block"
+    "editor.cursorStyle": "block-outline"
 }
